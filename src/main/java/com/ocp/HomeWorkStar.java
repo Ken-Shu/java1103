@@ -3,26 +3,22 @@ package com.ocp;
 public class HomeWorkStar {
 
     public static void main(String[] args) {
-        int line = 5;
-        int speac = 4;
-        //*        *   i*x  8 
+        int x = 10;
+        int y = 5;
+
+        //*        *   i*x  8   1  3  5  7  9
         //**      **        6
         //***    ***        4
         //****  ****        2
         //**********        0
-        for (int i = 1; i <= line; i++) {    // 變數1 行數
-            for (int y = 1; y <= i; y++) {   //星星數
+        for (int i = 0; i < 5; i++) {    // 變數1 行數
+            for (int j = 0; j <= i; j++) {
                 System.out.print("*");
             }
-            for (int x = 1; x<=line ; x++) {    //空格1
-                for(int z = 4; z<=speac ; z++){
-                
-                    System.out.print(" ");
+            for (int j = 14; j > i * 2 - 1; j--) {
+                System.out.print(" ");
             }
-            }
-
-        
-        System.out.println();
-}
+            System.out.println();
+        }
     }
 }
