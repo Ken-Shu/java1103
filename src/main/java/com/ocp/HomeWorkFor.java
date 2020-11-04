@@ -1,6 +1,6 @@
 package com.ocp;
 
-public class HomeWorkWhile {
+public class HomeWorkFor {
 
     public static void main(String[] args) {
         int x = 10;  //排數
