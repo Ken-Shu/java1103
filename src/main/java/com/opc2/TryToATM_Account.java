@@ -2,7 +2,7 @@
 package com.opc2;
 
 public class TryToATM_Account {
-    String stock;  //股票
+    String stock_name;  //股票
     public int stock_value; //股票價值
     String buy_name; //購買人姓名
     private int buy_namebalance;//購買人餘額
