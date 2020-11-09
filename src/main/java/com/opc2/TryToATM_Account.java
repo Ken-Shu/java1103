@@ -2,24 +2,43 @@
 package com.opc2;
 
 public class TryToATM_Account {
-    String stock_name;  //股票
-    public int stock_value; //股票價值
-    String buy_name; //購買人姓名
-    private int buy_namebalance;//購買人餘額
-    public int stock_x; //份數
-    private int name_stock; //購買人持有份數
+String name; // 姓名 
+String stock;// 股票
+public int input_money; //存錢
+private int balance2; // 餘額
+public int buy_amount; //持有數量
 
-void buystock(int money2){   //購買股票
-    if(money2<buy_namebalance){
-        name_stock=name_stock+stock_x;
-        buy_namebalance -= money2;
-        System.out.printf("購買成功 餘額剩下:%d",buy_namebalance);
-    }else {System.out.println("餘額不足");}
+void inputmoney(int money2){
+    if (money2>=0){
+        balance2+=money2;
+        System.out.printf("餘額顯示:%s\n",balance2);
+    }
 }
-void sellstock(int money2){
-    if(name_stock>=stock_x){
-        buy_namebalance=buy_namebalance+(stock_value*stock_x);
-        System.out.printf("賣出成功 餘額剩下:%d",buy_namebalance);
-    }else {System.out.println("賣出失敗 張數不足");}
+void price(int price){
+    if (buy_amount<=0 ){
+        buy_amount+=price;
+        System.out.printf("成功購買 %d 張\n",price);
+    }else if(buy_amount>=(buy_amount+=price)){
+        buy_amount-=price;
+    }
 }
-        }
+
+void buystock(int money2){
+    if (balance2>=money2){
+        balance2-=money2;
+        System.out.printf("購買stock成功 支付 %d\n",money2);                                  
+}else {System.out.println("購買失敗 餘額不足");}
+}
+//x 股價
+    void sellstock(int x){
+    if(buy_amount>=0){
+        balance2+=buy_amount*x;
+        System.out.printf("售出stock成功 入帳 %d\n",(buy_amount*x));
+    }else {System.out.println("售出失敗 請再次操作");
+} 
+    }
+ 
+void printBalance2(){
+          System.out.printf("姓名:%s 持有數量:%d 餘額:%d\n",name,buy_amount,balance2);
+}
+}
