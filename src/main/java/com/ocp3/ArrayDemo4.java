@@ -31,7 +31,7 @@ public class ArrayDemo4 {
                 
         double h_cv = h_sd / h_avg;
 
-        System.out.printf("身高的變異係數(CV):%.3f(%d%%)\n", h_cv, (h_cv * 100));
+        System.out.printf("身高的變異係數(CV):%.3f(%.1f%%)\n", h_cv, (h_cv * 100));
                 
         System.out.println("----------------------------------");
                 
@@ -56,7 +56,7 @@ public class ArrayDemo4 {
                 
         double w_cv = w_sd / w_avg;
 
-        System.out.printf("身高的變異係數(CV):%.3f(%d%%)\n", w_cv, (w_cv * 100));
+        System.out.printf("身高的變異係數(CV):%.3f(%.1f%%)\n", w_cv, (w_cv * 100));
         System.out.println();
         System.out.printf("%S 誰的分散程度大\n",(h_cv>w_cv?"身高":"體重"));
     }
