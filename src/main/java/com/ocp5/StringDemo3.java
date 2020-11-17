@@ -3,7 +3,7 @@ package com.ocp5;
 
 public class StringDemo3 {
     public static void main(String[] args) {
-        String s1 = new String("Java");  //參考型別
+        String s1 = new String("Java");  //參考型別 String new 放在stack區
         s1=s1.concat("8");//concat 字串連接
         System.out.println(s1);
         
