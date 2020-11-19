@@ -3,9 +3,9 @@ package com.ocp;
 public class HomeWorkFor {
 
     public static void main(String[] args) {
-        int x = 10;  //排數
-        int y = 5;   //行數
-        for (int m = 1; m <= y; m++) {   //行數
+        int x = 10;  //列數
+        int y = 5;   //排數
+        for (int m = 1; m <= y; m++) {   //排數
            for ( int p = 1 ; p<=m ; p++ ){
                System.out.print("*");
            }
