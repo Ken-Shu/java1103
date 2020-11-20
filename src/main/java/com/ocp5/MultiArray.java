@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class MultiArray {
     public static void main(String[] args) {
-        int[][]scores = new int [2][3];
+        int[][]scores = new int [3][4];
         System.out.println(scores.length);
         System.out.println(scores[0].length);
         System.out.println(scores[1].length);
