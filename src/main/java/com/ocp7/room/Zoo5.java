@@ -17,7 +17,7 @@ public class Zoo5 {
             System.out.println(animal);
             sum += animal.getFoot();
         }
-        System.out.println("sum="+sum);
+       System.out.println("sum="+sum);
     }
 }
 
