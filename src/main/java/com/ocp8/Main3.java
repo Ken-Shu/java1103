@@ -6,7 +6,7 @@ public class Main3 {
         int n=2;
         Class [] classes = {Car.class , Bicycle.class,Airplane.class};
         
-        int [][] nn ={car,bicycle,airplane}{2,5,3};
+        int [][] nn ={car,bicycle,airplane}{1,3,2};
         
         RentalCompany rc = new RentalCompany();        
         for(Class clazz : classes){
