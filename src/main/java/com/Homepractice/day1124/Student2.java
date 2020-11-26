@@ -8,5 +8,5 @@ public class Student2 extends ClassRoom{
     public Student2(String name, int english, int math) {
         super(name, english, math);
     }
-    
+
 }
