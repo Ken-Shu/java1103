@@ -18,7 +18,30 @@ public class RentalCompany {
             new Airplane("灣流", 5, 800, 50000),// 買飛機
         };
     }
+    public int rentAir(){
+        int rentAir = 0;
+        for(Transportation ts :transportations){
+            rentAir=ts.getAmount();
+        }
+      return rentAir;  
+    }
+    
+     public int rentBicycle(){
+        int rentBicycle = 0;
+        for(Transportation ts :transportations){
+            rentBicycle=ts.getAmount();
+        }
+      return rentBicycle;  
+    }
 
+      public int rentCar(){
+        int rentCar = 0;
+        for(Transportation ts :transportations){
+            rentCar=ts.getAmount();
+        }
+      return rentCar;  
+    }
+     
     // 取得交通工具庫存
     public Transportation[] getTransportations() {
         return transportations;
@@ -34,7 +57,7 @@ public class RentalCompany {
         //查 Bicycle 的數量?
         int airplaneAmount = 0;
         for (Transportation ts : transportations) {
-            if (ts instanceof Bicycle) {
+            if (ts instanceof Bicycle) { //ts 內是否包含Bicycle
                 airplaneAmount += ts.getAmount();
             }
         }
@@ -117,9 +140,7 @@ public class RentalCompany {
     }
 
     //租任意交通工具
-    public boolean rentTransportation(Class clazz, int amount) {
-        int current = 0;
-
+    public boolean rentTransportation(Class clazz, int amount) {       
 //計算數量是否足夠
         for (Transportation ts : transportations) {
             if (clazz.isInstance(ts)) // if (ts instanceof )
@@ -134,6 +155,7 @@ public class RentalCompany {
         }
         return true;
     }
+    
 
     // 列印庫存
     public void print() {
