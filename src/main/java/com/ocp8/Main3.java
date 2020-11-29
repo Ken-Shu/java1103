@@ -9,7 +9,7 @@ public class Main3 {
         Class[][] classes = {
             {Car.class}, 
             {Bicycle.class}, 
-            {Airplane.class}}; //3,1
+            {Airplane.class}}; //3.1
         RentalCompany rc = new RentalCompany();
 
         //System.out.println(Arrays.toString(rc.getTransportations()));
@@ -17,7 +17,7 @@ public class Main3 {
         int[][] num2 = {
             {1}, 
             {3}, 
-            {2}};//3,1
+            {2}};//3.1
 //        int [][] num ={{rc.rentCar(),rc.rentBicycle(),rc.rentAir()},{1,3,2}};       
 //         
 //             for (int j = 0; j <= num.length;j++) {
@@ -25,7 +25,7 @@ public class Main3 {
 //                 chang = num [1][j];                 
 //                 System.out.println(chang);
 //             }        
-        for (int i = 0; i <= 2; i++) {
+        for (int i = 0; i < classes.length; i++) {
             for (Class clazz : classes[0]) {
                 clazz = classes[i][0]; //陣列[i][0] 最大陣列為1 內小鎮列為3 所以i值為0,1,2 最大陣列值為0
                 for (int num : num2[0]) {
