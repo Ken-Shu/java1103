@@ -5,11 +5,6 @@ import com.ocp10.pet.entity.EDog;
 import com.ocp10.pet.entity.Pet;
 import com.ocp10.pet.entity.Shiba;
 
-import com.ocp10.pet.entity.Chihuahua;
-import com.ocp10.pet.entity.EDog;
-import com.ocp10.pet.entity.Pet;
-import com.ocp10.pet.entity.Shiba;
-
 public class PetService {
     // 取得目前所有的寵物(Pet), 庫存 !
     public Pet[] getPets() {
