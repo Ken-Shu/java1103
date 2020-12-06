@@ -25,7 +25,7 @@ public class Main {
         gp.buyvolume(amount);
         System.out.println("-------------------------------------");
         //顯示獎項
-        System.out.println("今日獎項:");
+        System.out.println("今日獎項(20抽保證大獎):");
         gp.printprize();
         System.out.println("-------------------------------------");                
         //使用票卷
