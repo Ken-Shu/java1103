@@ -30,7 +30,7 @@ public class Company {
     //購買卷 餘額
 
     public int buyvolume(int amount) {
-        
+
         int volumeamount = 0;
         gar.setCapsule(amount);
 
@@ -39,7 +39,7 @@ public class Company {
         if (inputmoney >= (gar.volume * amount)) {
             volumeamount += inputmoney - (gar.volume * amount);
             System.out.printf("一張%d元 成功購買票卷%d張 餘額:%d\n", gar.volume, gar.getCapsule(), volumeamount);
-        } else if(inputmoney<(gar.volume*amount)){
+        } else if (inputmoney < (gar.volume * amount)) {
             System.out.println("購買失敗");
             System.exit(0); //要問老師
         }
@@ -57,21 +57,36 @@ public class Company {
     //使用轉蛋
     public int capsule(int am) {
         Random r = new Random();
-        int get = 0;
+        int cound = gar.getCapsule();
 
-        if (gar.getCapsule() >= am) {
-            for (int i = 0; i < am; i++) {
-                if (i != am-1) {
-                    get = r.nextInt(3) + 1;
-                    System.out.printf("抽到:%s\n", prize[get][0]);
-                } else if (i == am-1) {
-                    System.out.printf("恭喜得到%s\n", prize[4][0]);
-                }
+        if (gar.getCapsule() >= am  ) {
+            for(int i =0; i<=am; i++){        
+        int prize1 = r.nextInt(4);
+        int persent = (r.nextInt(99) + 1)/ 10;                  
+            switch (persent) {
+                case 10:  
+                    System.out.printf("恭喜得到%s\n",prize[4][0]);
+                case 9:                    
+                case 8:
+                case 7:
+                case 6:
+                case 5:
+                case 4:
+                case 3:
+                case 2:
+                case 1:                                            
+                case 0:
+                    System.out.printf("得到%s\n", prize[prize1][0]);
+            }
+            if(i==20){
+                System.out.printf("恭喜得到%s\n",prize[4][0]);
+                break;
+            } 
             }
         } else {
             System.out.println("票卷不足");
         }
         System.out.printf("剩餘%d張票卷\n", gar.getCapsule() - am);
-        return get;
+        return cound-am;
     }
 }
