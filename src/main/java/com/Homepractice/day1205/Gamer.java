@@ -65,4 +65,9 @@ public class Gamer extends Server {
         return capsule;
     }
 
+    @Override
+    public int money() {
+        return money;
+    }
+
 }

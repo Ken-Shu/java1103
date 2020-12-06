@@ -5,4 +5,5 @@ int volume(); //卷
 String player();
 int money();
 int capsule(); //轉蛋
+String prize(); //獎項
 }
