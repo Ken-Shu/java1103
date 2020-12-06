@@ -4,11 +4,11 @@ import java.util.Scanner;
 import com.Homepractice.day1205.Gamer;
 import java.util.Random;
 
-public class GamePlayer {
+public class Company {
     Gamer gar = new Gamer();
     String name;
     int inputmoney;
-    int volume = 30;
+    int volume = 30; //抽獎卷價格
     
     //輸入名稱
     public Capsule Gamer(String name){
@@ -38,7 +38,7 @@ public class GamePlayer {
         return volumeamount;
     }
     //印出獎項
-    String [][] prize = {{"1.橡皮擦"},{"2.鉛筆"},{"3.彈珠"},{"4.糖果"},{"5.跑車"}};
+    String [][] prize = {{"橡皮擦"},{"鉛筆"},{"彈珠"},{"糖果"},{"跑車"}};
     public void printprize(){
         for(int i = 0 ; i<prize.length;i++){
             System.out.println(prize[i][0]);

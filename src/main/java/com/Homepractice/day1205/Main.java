@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);        
-        GamePlayer gp = new GamePlayer();        
+        Company gp = new Company();        
         
         System.out.print("請輸入姓名:");
         String name = sc.next();
