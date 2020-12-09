@@ -2,14 +2,15 @@ package com.Homepractice.day1209;
 
 import com.Homepractice.day1209.Zoo;
 
-public class Main {
+
+public class AnimalService{
 
     public Zoo[] getBirds() {
-        Bird[] birds = {
+        Zoo[] Birds = {
             new Bird("麻雀", 2),
             new Bird("鴕鳥", 2)
         };
-        return birds;
+        return Birds;
     }
     
 
