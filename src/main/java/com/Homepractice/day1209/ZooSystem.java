@@ -1,4 +1,4 @@
-package com.Homepractice.day1209;
+ package com.Homepractice.day1209;
 
 public abstract class ZooSystem implements Zoo {
 

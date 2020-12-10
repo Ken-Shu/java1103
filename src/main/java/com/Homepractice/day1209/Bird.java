@@ -50,10 +50,7 @@ public class Bird extends ZooSystem {
         this.move = move;
     }
 
-    @Override
-    public String toString() {
-        return "鳥類=>" + "名稱:" + name + ", 腳數:" + foot + ", 移動方式:" + move + '}';
-    }
+   
 
     @Override
     public String name() {
