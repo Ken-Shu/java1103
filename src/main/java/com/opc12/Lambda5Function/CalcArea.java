@@ -1,4 +1,4 @@
-package com.opc12.Lambda5;
+package com.opc12.Lambda5Function;
 
 import java.util.function.Function;
 

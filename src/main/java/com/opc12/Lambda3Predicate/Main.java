@@ -1,4 +1,4 @@
-package com.opc12.Lambda3;
+package com.opc12.Lambda3Predicate;
 
 import java.util.function.Predicate;
 

@@ -1,4 +1,4 @@
-package com.opc12.Lambda1;
+package com.opc12.Lambda1邏輯帶入;
 
 public class Main {
 
