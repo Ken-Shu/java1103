@@ -10,7 +10,7 @@ public class IntStreamDemo {
         int sum = 0;
         for(int x : nums){
             if(x>=60){
-                sum+=60;
+                sum+=x;
             }
         }
         System.out.println(sum);
