@@ -15,7 +15,7 @@ public class Main1 {
         //印出小於4個字數支陣列內容
         Stream.of(nums).filter(x -> x.length()<=4).forEach(System.out::println);
         //印出小於4個字數之陣列字數總和
-        int sum2 = Stream.of(nums).mapToInt(String::length).filter(Until::printppp).sum();
+        int sum2 = Stream.of(nums).mapToInt(String::length).filter(Until::print).sum();
         System.out.println(sum2);
     }
 }
