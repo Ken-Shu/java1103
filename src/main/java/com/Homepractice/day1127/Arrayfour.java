@@ -11,9 +11,10 @@ public class Arrayfour {
                 int z = p [j];
                System.out.println(z);
             }
+//System.out.println(m.length);
              
         }
-       
+    }
     }
     
-}
+
