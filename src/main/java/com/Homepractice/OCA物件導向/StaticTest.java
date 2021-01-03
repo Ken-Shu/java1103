@@ -4,7 +4,6 @@ package com.Homepractice.OCA物件導向;
 class StaticTest {
     int ns;
     static int s;
-    static int y;
         public StaticTest(int ns) {
             if(s<ns){
                 s=ns;
