@@ -1,5 +1,5 @@
 
-package com.ocp14;
+package com.ocp14_collection_list_map;
 //Vector 是執行續安全(多人存取安全)的集合
 //Vector 自動增長機制 預設為(capacity)10 若資料(size)>10 若超過則會(原長度*2)
 

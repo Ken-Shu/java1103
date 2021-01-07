@@ -1,4 +1,4 @@
-package com.ocp16;
+package com.ocp16_Exception;
 
 public class LoginException extends Exception{
     //將錯誤訊息傳給父類別

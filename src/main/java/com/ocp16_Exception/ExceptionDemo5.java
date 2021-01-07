@@ -1,4 +1,4 @@
-package com.ocp16;
+package com.ocp16_Exception;
 
 public class ExceptionDemo5 {
     public static void main(String[] args) {
