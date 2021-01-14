@@ -7,12 +7,14 @@ package com.ocp19_thread;
 
 import java.util.Random;
 import javax.swing.JLabel;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
- * @author MB-study
+ * @author ABC
  */
-public class BingoJFrame extends javax.swing.JPanel {
+public class BingoJFrame extends javax.swing.JFrame {
 
     /**
      * Creates new form BingoJFrame
@@ -35,77 +37,108 @@ public class BingoJFrame extends javax.swing.JPanel {
         b3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
-        b1.setFont(new java.awt.Font("新細明體", 0, 100)); // NOI18N
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        b1.setFont(new java.awt.Font("新細明體", 0, 48)); // NOI18N
         b1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         b1.setText("0");
 
-        b2.setFont(new java.awt.Font("新細明體", 0, 100)); // NOI18N
+        b2.setFont(new java.awt.Font("新細明體", 0, 48)); // NOI18N
         b2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         b2.setText("0");
 
-        b3.setFont(new java.awt.Font("新細明體", 0, 100)); // NOI18N
+        b3.setFont(new java.awt.Font("新細明體", 0, 48)); // NOI18N
         b3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         b3.setText("0");
 
         jButton1.setFont(new java.awt.Font("新細明體", 0, 48)); // NOI18N
         jButton1.setText("Play");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(113, 113, 113)
-                .addComponent(b1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
-                .addComponent(b2)
-                .addGap(127, 127, 127)
-                .addComponent(b3)
-                .addGap(117, 117, 117))
             .addGroup(layout.createSequentialGroup()
-                .addGap(261, 261, 261)
+                .addGap(64, 64, 64)
+                .addComponent(b1)
+                .addGap(95, 95, 95)
+                .addComponent(b2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
+                .addComponent(b3)
+                .addGap(78, 78, 78))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(140, 140, 140)
                 .addComponent(jButton1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(67, 67, 67)
+                .addGap(88, 88, 88)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(b3)
+                    .addComponent(b1)
                     .addComponent(b2)
-                    .addComponent(b1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
+                    .addComponent(b3))
+                .addGap(40, 40, 40)
                 .addComponent(jButton1)
-                .addGap(84, 84, 84))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    class Bingo extends Thread{
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+         Bingo bingo1 = new Bingo(b1);
+        Bingo bingo2 = new Bingo(b2);
+        Bingo bingo3 = new Bingo(b3);
+        bingo1.start();
+        bingo2.start();
+        bingo3.start();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    class Bingo extends Thread {
         private JLabel label;
-        public Bingo(JLabel label){
+        public Bingo(JLabel label) {
             this.label = label;
         }
-        public void run(){
+        public void run() {
             Random random = new Random();
-            for (int i = 0; i <= 100; i++) {
-                int n = random.nextInt(10); //0~9
-                label.setText(n+"");
+            for(int i=1;i<=100;i++) {
+                int n = random.nextInt(10); // 0~9
+                label.setText(n + "");
                 try {
-                    if(i>95){
-                       Thread.sleep(1000);
-                    }else if(i>90){
+                    if(i > 99) {
+                        Thread.sleep(5000);
+                    } else if(i > 95) {
+                        Thread.sleep(1000);
+                    } else if(i > 90) {
                         Thread.sleep(500);
-                    }else if(i>80){
+                    } else if(i > 70) {
+                        Thread.sleep(100);
+                    } else if(i > 50) {
                         Thread.sleep(50);
-                    }else{
-                    Thread.sleep(10);
+                    } else {
+                        Thread.sleep(10);
                     }
                 } catch (InterruptedException ex) {
                 }
             }
         }
     }
+    
+    
+       
+    //GEN-LAST:event_jButton1ActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
