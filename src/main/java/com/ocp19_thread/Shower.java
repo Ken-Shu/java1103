@@ -1,3 +1,4 @@
+
 package com.ocp19_thread;
 
 import java.util.logging.Level;
@@ -16,7 +17,7 @@ class Father extends Thread{
         try {
             //暫停  sleep 可以用來設定時間 join()無設定 worker做完即執行
             //也可在()內設定時間 join(設定毫秒) 最大等待時間
-            worker.join(10_000);            
+            worker.join(10_000);       
         } catch (InterruptedException ex) {
             
         }
@@ -30,13 +31,13 @@ class Worker extends Thread{
     @Override
     public void run() {
         System.out.println("工人送瓦斯中...");
-        for (int i = 0; i <= 5; i++) {
+        for (int i = 0; i <= 1; i++) {
             System.out.print(i + "秒鐘 ");
             try {
-                Thread.sleep(1000);
+                Thread.sleep(1000);  //每次讀秒的(暫停)時間
             } catch (InterruptedException ex) {  //中斷例外
                 System.out.println("瓦斯工人發生意外");
-                return;
+                return; //用return 中斷
             }
         }
         System.out.println();
