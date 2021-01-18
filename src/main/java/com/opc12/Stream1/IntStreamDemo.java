@@ -1,4 +1,4 @@
-package com.opc12.Stream1;
+package com.opc12_Lambda.Stream1;
 
 import java.util.stream.IntStream;
 

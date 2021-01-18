@@ -1,4 +1,4 @@
-package com.opc12.Lambda2邏輯帶入;
+package com.opc12_Lambda.Lambda2邏輯帶入;
 
 //如果interface內有兩個方法 則FunctionalInterface會報錯
 @FunctionalInterface

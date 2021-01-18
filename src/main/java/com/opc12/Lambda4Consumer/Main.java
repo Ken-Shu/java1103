@@ -1,4 +1,4 @@
-package com.opc12.Lambda4Consumer;
+package com.opc12_Lambda.Lambda4Consumer;
 
 import java.util.function.Consumer;
 

@@ -5,6 +5,9 @@ public class Main {
         //因為Foo是static 所以new Bar.Foo(); Bar後面不用加()
         Bar.Foo foo = new Bar.Foo();
         foo.pintMe();
+        foo.hello();
+        Bar.Hoo b = new Bar().new Hoo();
+        b.hello();
     }
     
 }

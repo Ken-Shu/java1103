@@ -9,9 +9,10 @@ public class TreeSetDemo {
         Set<String>names = new TreeSet<>();
         Faker faker = new Faker();
         for (int i = 0; i < 10; i++) {
-            names.add(faker.name().lastName());
+            names.add(faker.name().firstName());
         }
         System.out.println(names);
+        
     }
     
 }
