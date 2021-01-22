@@ -6,7 +6,9 @@ public class MyJob {
         Runnable r2 = new Job2();
         Runnable r3 = new Job3();
         Runnable r4 = () -> System.out.println("買早餐");
-        Thread t = new Thread(r4);
+        Thread t = new Thread(r1);
+        
+        
         t.start();
     }
     

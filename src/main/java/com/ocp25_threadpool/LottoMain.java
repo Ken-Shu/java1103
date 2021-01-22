@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 
 public class LottoMain {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception{
         //ExecutorService exec = Executors.newCachedThreadPool();
         ExecutorService exec = Executors.newFixedThreadPool(2);
         for (int i = 0; i < 10; i++) {
