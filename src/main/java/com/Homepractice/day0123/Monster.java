@@ -1,9 +1,9 @@
 package com.Homepractice.day0123;
 
 public class Monster implements Ability ,Runnable{
-private String name;
-private int atk =5;
-private int hp = 50;
+private String name ="史萊姆";
+public int atk =5;
+public int hp = 50;
 
     public Monster() {
     }
@@ -12,8 +12,6 @@ private int hp = 50;
         this.name = name;
    
     }
-
-
 
     public String getName() {
         return name;

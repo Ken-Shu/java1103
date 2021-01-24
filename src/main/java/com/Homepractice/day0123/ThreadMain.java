@@ -1,11 +1,21 @@
 package com.Homepractice.day0123;
 
+import java.util.concurrent.ExecutionException;
+
+
+
 public class ThreadMain {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException, ExecutionException {
+         
+        Thread tex = new Thread(new Fight());
+        tex.start();
         
-        ThreadExcutor tex = new ThreadExcutor();
-        tex.execute(new RunnableTest());
         
+        
+        MonsterAttack ma = new MonsterAttack();
+        HeroAttack ha = new HeroAttack();
+       Fighting fi = new Fighting();
+       fi.monWin(ma, ha);
     }
     
 }

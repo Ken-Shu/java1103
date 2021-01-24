@@ -1,9 +1,9 @@
 package com.Homepractice.day0123;
 
 public class Hero implements Ability , Runnable{
-private String name;
-private int atk =10;
-private int hp = 100;
+private String name = "小明";
+public int atk =10;
+public int hp = 100;
 
     public Hero() {
     }
