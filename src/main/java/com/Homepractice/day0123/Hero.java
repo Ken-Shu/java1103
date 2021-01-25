@@ -5,6 +5,22 @@ private String name = "小明";
 public int atk =10;
 public int hp = 100;
 
+    public int getAtk() {
+        return atk;
+    }
+
+    public void setAtk(int atk) {
+        this.atk = atk;
+    }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
     public Hero() {
     }
 
