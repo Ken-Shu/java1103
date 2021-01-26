@@ -1,27 +1,20 @@
 package com.Homepractice.day0123;
 
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class ThreadMain {
 
-    public static void main(String[] args) throws InterruptedException, ExecutionException, Exception {
-
-        Thread tex = new Thread(new Fight());
-        tex.start();
-
-        MonsterAttack ma = new MonsterAttack();
-        HeroAttack ha = new HeroAttack();
-
+    public static void main(String[] args) {
+        ExecutorService service = Executors.newFixedThreadPool(3);
+        service.submit(new Fight());
         
-            for (int i = 0; i <= 5; i++) {
-                if (ma.hero_hp > 0 || ha.monster_hp > 0) {
-                ma.call();
-                ha.call();
-            }else break;
-        } 
-                   
+        for (int i = 0; i < 5; i++) {
+        service.submit(new MonsterAttack());
+        service.submit(new HeroAttack());
+         
         }
+        service.shutdown(); 
     }
-
-
-
+}
