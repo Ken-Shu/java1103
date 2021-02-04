@@ -43,7 +43,7 @@ public class OpenWeater {
         TimeZone tz =TimeZone.getDefault();
         calendar.add(Calendar.MILLISECOND,tz.getOffset(calendar.getTimeInMillis()));
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss",Locale.getDefault());
-        java.util.Date currentTimeDate = new java.util.Date((long)1612443792 *1000);
+        java.util.Date currentTimeDate = new java.util.Date((long)dt *1000);
         //-----------------------------------
         System.out.printf("目前溫度:%.2f\n",temp);
         System.out.printf("體感溫度:%.2f\n",feels_like);
