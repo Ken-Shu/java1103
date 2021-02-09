@@ -1,7 +1,7 @@
 package food_salety;
 
 import food_salety.entity.Rice;
-import food_salety.util.Service;
+import food_safety.util.Service;
 import org.junit.Test;
 
 public class Test1 {
