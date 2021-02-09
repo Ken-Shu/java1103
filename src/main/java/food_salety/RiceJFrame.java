@@ -65,6 +65,11 @@ public class RiceJFrame extends javax.swing.JFrame {
         });
 
         kw.setFont(new java.awt.Font("新細明體", 0, 24)); // NOI18N
+        kw.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kwActionPerformed(evt);
+            }
+        });
 
         clearBtn.setFont(new java.awt.Font("新細明體", 0, 24)); // NOI18N
         clearBtn.setText("清空");
@@ -167,6 +172,10 @@ public class RiceJFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "匯入失敗無資料可供匯入");
         }
     }//GEN-LAST:event_importBtnActionPerformed
+
+    private void kwActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kwActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_kwActionPerformed
 
     /**
      * @param args the command line arguments
