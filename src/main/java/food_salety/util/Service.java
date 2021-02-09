@@ -1,7 +1,8 @@
-package food_safety.util;
+package food_salety.util;
 
 import com.google.gson.Gson;
 import food_salety.entity.Rice;
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -9,6 +10,7 @@ import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.util.List;
 
 public class Service {
     private static Connection conn;

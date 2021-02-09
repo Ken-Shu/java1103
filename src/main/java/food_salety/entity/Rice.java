@@ -100,6 +100,7 @@ public class Rice {
     public void setLog_UpdateTime(String Log_UpdateTime) {
         this.Log_UpdateTime = Log_UpdateTime;
     }
+
     
     
 }
