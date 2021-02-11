@@ -2,14 +2,7 @@
 package hometoRice.entity;
 
 public class Rice {
-    
-    private  int id ;
-    public int getId(){
-        return id;
-    }
-    public void setId(int id){
-        this.id = id;
-    }
+    private int id;
     private String Title;
     private String 編號;
     private String 品名;
@@ -21,6 +14,14 @@ public class Rice {
     private String 違反規定;
     private String 行政處分;
     private String Log_UpdateTime;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return Title;
@@ -109,6 +110,5 @@ public class Rice {
     public void setLog_UpdateTime(String Log_UpdateTime) {
         this.Log_UpdateTime = Log_UpdateTime;
     }
-    
     
 }
