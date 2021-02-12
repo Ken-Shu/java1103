@@ -1,10 +1,10 @@
 package com.Homepractice.day1212;
 
 public class Hero extends Skill{
-public int hp = 100;
-public int mp = 50;
-public int atk=20 ;
-public String HeroName;
+private int hp = 100;
+private int mp = 50;
+private int atk=20 ;
+private String HeroName;
 
     public Hero() {
     }
