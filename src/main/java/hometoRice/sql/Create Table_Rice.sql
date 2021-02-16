@@ -1,6 +1,6 @@
-Create Table Rice (
-    id integer not null generated always as identity, -- 自動累加的序號
-    Title varchar(50), --vachar 
+Create Table Rice{
+id integer not null generated always as identity, -- 自動累加
+Title varchar(50), --vachar 
     編號 varchar(50),
     品名 varchar(50),
     國際條碼 varchar(50),
@@ -12,4 +12,4 @@ Create Table Rice (
     行政處分 varchar(50),
     Log_UpdateTime varchar(50),
     primary key(id)
-)
+}

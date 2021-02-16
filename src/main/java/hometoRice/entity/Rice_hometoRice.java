@@ -1,8 +1,8 @@
 
 package hometoRice.entity;
 
-public class Rice {
-    private int id;
+public class Rice_hometoRice {
+    private int id ;
     private String Title;
     private String 編號;
     private String 品名;
@@ -110,5 +110,5 @@ public class Rice {
     public void setLog_UpdateTime(String Log_UpdateTime) {
         this.Log_UpdateTime = Log_UpdateTime;
     }
-    
+
 }
