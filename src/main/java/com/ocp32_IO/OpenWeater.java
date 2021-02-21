@@ -5,10 +5,8 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.URL;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
-import java.util.TimeZone;
 import org.json.JSONObject;  //{}jasonobject []jsonarray
 
 public class OpenWeater {
