@@ -11,11 +11,4 @@ private int money;
     public void setMoney(int money) {
         this.money = money;
     }
-
-    @Override
-    public String toString() {
-        return "Today Input : "+money;
-    }
-
-
 }
