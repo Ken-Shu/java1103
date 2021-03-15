@@ -2,7 +2,6 @@ package food_salety.util;
 
 import com.google.gson.Gson;
 import food_salety.entity.Rice;
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -18,7 +17,7 @@ public class Service {
     private static Connection conn;
     static {
         try {
-            String url = "jdbc:derby://localhost:1527/demo";
+            String url = "jdbc:derby://localhost:1527/APP";
             String user = "app";
             String password = "app";
             conn = DriverManager.getConnection(url, user, password);

@@ -51,10 +51,28 @@ public class MyStockClient extends javax.swing.JFrame {
         priceLabel.setFont(new java.awt.Font("新細明體", 0, 48)); // NOI18N
         priceLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         priceLabel.setText("00.00");
+        priceLabel.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                priceLabelAncestorAdded(evt);
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
 
         changLabel.setFont(new java.awt.Font("新細明體", 0, 24)); // NOI18N
         changLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         changLabel.setText("00.00");
+        changLabel.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                changLabelAncestorAdded(evt);
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -96,6 +114,14 @@ public class MyStockClient extends javax.swing.JFrame {
     private void symbolLabelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_symbolLabelActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_symbolLabelActionPerformed
+
+    private void changLabelAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_changLabelAncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_changLabelAncestorAdded
+
+    private void priceLabelAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_priceLabelAncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_priceLabelAncestorAdded
 
     /**
      * @param args the command line arguments

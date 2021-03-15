@@ -1,6 +1,7 @@
 
 package com.Homepractice;
 
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -23,8 +24,7 @@ public class SimpleDateTest {
             System.out.println(diff);
         } catch (Exception e) {
         }
-        
-        
+      
     }
     
 }

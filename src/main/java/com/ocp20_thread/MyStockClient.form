@@ -69,6 +69,9 @@
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="00.00"/>
       </Properties>
+      <Events>
+        <EventHandler event="ancestorAdded" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="priceLabelAncestorAdded"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="changLabel">
       <Properties>
@@ -78,6 +81,9 @@
         <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="00.00"/>
       </Properties>
+      <Events>
+        <EventHandler event="ancestorAdded" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="changLabelAncestorAdded"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
