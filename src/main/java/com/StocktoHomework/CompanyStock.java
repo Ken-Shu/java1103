@@ -19,8 +19,7 @@ public class CompanyStock {
  *漲跌幅 DECIMAL(10);
  *最高 DECIMAL(10);
  *最低 DECIMAL(10);
-*/  
-    Date date = new Date();   
+*/
     String symbol;
     
     private  static Connection conn;
